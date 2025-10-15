@@ -1,0 +1,79 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #282846);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  color: #ff6b9f;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Anime Grid */
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+
+.anime-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.anime-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.anime-card h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.anime-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 107, 159, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(255,255,255,0.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .anime-card img {
+    height: 160px;
+  }
+}
